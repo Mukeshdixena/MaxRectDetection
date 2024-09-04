@@ -74,7 +74,7 @@ def maximalRectangleWithCorners(matrix):
 
     return max_area, top_left, top_right, bottom_left, bottom_right
 
-def plot_rectangle_with_points(image_path, corners):
+def plot_rectangle_with_points(image_path, corners, output_path):
     image = cv2.imread(image_path)
     
     if image is None:
@@ -95,10 +95,18 @@ def plot_rectangle_with_points(image_path, corners):
     plt.title("Largest Rectangle with Corner Points")
     plt.show()
 
-image_path = 'image-path.png' 
+    if cv2.imwrite(output_path, image):
+        print(f"Image saved successfully to {output_path}")
+    else:
+        print("Failed to save the image.")
+
+
+
+# Example usage:
+image_path = 'img/input_images/zigzag_mask.png' 
+output_path = 'img/output_images/out_zigzag_mask.png'
 
 binary_matrix, original_image = convert_image_to_binary_matrix(image_path)
-
 max_area, top_left, top_right, bottom_left, bottom_right = maximalRectangleWithCorners(binary_matrix)
 
 if max_area > 0:
@@ -107,6 +115,6 @@ if max_area > 0:
     print(f"Top Right Corner: {top_right}")
     print(f"Bottom Left Corner: {bottom_left}")
     print(f"Bottom Right Corner: {bottom_right}")
-    plot_rectangle_with_points(image_path, (top_left, top_right, bottom_left, bottom_right))
+    plot_rectangle_with_points(image_path, (top_left, top_right, bottom_left, bottom_right), output_path)
 else:
     print("No rectangle found.")
