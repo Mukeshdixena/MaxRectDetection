@@ -121,13 +121,23 @@ In this example, the script will load an image, convert it to a binary matrix, f
 Below are examples of the largest rectangle detected in various images:
 
 ### Example 1
-![Result 1](img/output_images/out_03_hobbes_bin_mask.png)
+<!-- ![Result 1](img/output_images/out_03_hobbes_bin_mask.png) -->
+
+<img src="img/output_images/out_03_hobbes_bin_mask.png" alt="Result 1" width="400"/>
+
 
 ### Example 2
-![Result 2](img/output_images/out_15810849818453118.jpg)
+<!-- ![Result 2](img/output_images/out_15810849818453118.jpg) -->
+
+<img src="img/output_images/out_15810849818453118.jpg" alt="Result 2" width="400"/>
+
 
 ### Example 3
-![Result 3](img/output_images/out_zigzag_mask.png)
+<!-- ![Result 3](img/output_images/out_zigzag_mask.png) -->
+
+<img src="img/output_images/out_zigzag_mask.png" alt="Result 3" width="400"/>
+
 
 ### Example 4
-![Result 4](img/output_images/out_shxuX.jpg)
+<!-- ![Result 4](img/output_images/out_shxuX.jpg) -->
+<img src="img/output_images/out_shxuX.jpg" alt="Result 4" width="400"/>
