@@ -114,3 +114,20 @@ else:
 ```
 
 In this example, the script will load an image, convert it to a binary matrix, find the largest rectangle within the binary matrix, and then visualize it by drawing the rectangle on the original image.
+
+
+## Results
+
+Below are examples of the largest rectangle detected in various images:
+
+### Example 1
+![Result 1](img/output_images/out_03_hobbes_bin_mask.png)
+
+### Example 2
+![Result 2](img/output_images/out_15810849818453118.jpg)
+
+### Example 3
+![Result 3](img/output_images/out_zigzag_mask.png)
+
+### Example 4
+![Result 4](img/output_images/out_shxuX.jpg)
