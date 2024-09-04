@@ -96,7 +96,7 @@ pip install opencv-python numpy matplotlib
 ### Example
 
 ```python
-image_path = 'masks/KitchenCountertop_mask_1.png' 
+image_path = 'image-path.png' 
 
 binary_matrix, original_image = convert_image_to_binary_matrix(image_path)
 
